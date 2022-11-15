@@ -6,7 +6,7 @@ let orderBooks = {};
 let currOrderId = 0;
 let currTradeId = 0;
 
-const exchange = async (instrument, price, quantity, side) => {
+const newOrder = async (instrument, price, quantity, side) => {
   if (side === orderSide.BUY || side === orderSide.SELL) {
     
     const trades = [];
